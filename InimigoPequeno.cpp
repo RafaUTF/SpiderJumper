@@ -62,7 +62,7 @@ namespace Entidades {
 				direcao = 1;
 			}
 
-			corpo.move(aceleracao * direcao, 0.f);
+			corpo.move(aceleracao * direcao, vel.y);
 		}
 
 		float InimigoPequeno::getAceleracaoExtra() const
