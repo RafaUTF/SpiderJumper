@@ -13,8 +13,6 @@ namespace Entidades {
 			if (reducao == 0)
 				reducao = 0.05 + (rand() % 10) / 10.f;
 
-			cout << "teia com reducao: " << reducao << endl;
-
 			corpo.setSize(sf::Vector2f(32.f, 32.f));
 			centralizarEntidade();
 			try {
@@ -29,7 +27,7 @@ namespace Entidades {
 
 		TeiaAranha::~TeiaAranha()
 		{
-			cout << "destrutora teia" << endl;
+			
 		}
 
 

@@ -115,12 +115,12 @@ namespace Entidades {
             if (recarga >= TEMPO_RECARGA) {
                 if (j1 && sf::Keyboard::isKeyPressed(sf::Keyboard::C)) {
                     cout << "p1 ATIROU" << endl;
-                    tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x, tiros, this, FORCA_JOG));
+                    tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x, this, FORCA_JOG));
                     recarga = 0;
                 }
                 else if (!j1 && sf::Keyboard::isKeyPressed(sf::Keyboard::L)) {
                     cout << "p2 ATIROU" << endl;
-                    tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x, tiros, this, FORCA_JOG));
+                    tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x, this, FORCA_JOG));
                     recarga = 0;
                 }
             }

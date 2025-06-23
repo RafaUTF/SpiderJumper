@@ -1,6 +1,4 @@
 #pragma once
-//#include "Personagem.h"
-#include "ListaEntidades.h"
 
 namespace Entidades {
 	namespace Personagens {
@@ -17,7 +15,6 @@ namespace Entidades {
 	{
 	protected:
 		bool ativo;
-		Listas::ListaEntidades* lista;
 		unsigned long long duracao;
 
 		Entidades::Personagens::Jogador* pDono;
@@ -25,7 +22,6 @@ namespace Entidades {
 		//sobrecarga construtora
 		//quando eh criada:
 		Projetil(Vector2f pos = (Vector2f(0.f, 0.f)), bool dir = true, float raio = 0.f,
-			Listas::ListaEntidades* pl = nullptr,
 			Entidades::Personagens::Jogador* pdono = nullptr, short int f = 0);
 		//quando eh carregada:
 		Projetil(Vector2f pos = (Vector2f(0.f, 0.f)), Vector2f v = (Vector2f(0.f, 0.f)), 

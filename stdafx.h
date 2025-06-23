@@ -3,9 +3,7 @@
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-using std::cout;
-using std::cin;
-using std::endl;
+using namespace std;
 
 #include "json.hpp"
 #include <fstream>

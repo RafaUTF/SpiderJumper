@@ -1,14 +1,5 @@
-// Jogo.cpp
 #include "Jogo.h"
-#include "Fase1.h"  // Inclua a Fase1 aqui
-#include "Fase2.h"
-#include "json.hpp"
-#include "MenuInicial.h"
-#include <fstream>
 
-#include <string>
-
-using json = nlohmann::json;
 using namespace Fases;
 using namespace Entidades;
 

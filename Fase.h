@@ -1,17 +1,18 @@
 
 #pragma once
-#include "Ente.h"
 #include "ListaEntidades.h"
 #include "Gerenciador_Colisoes.h"
 #include "Gerenciador_Grafico.h"
+#include "Jogador.h"
+#include "Espinho.h"
 #include "Plataforma.h"
 #include "TeiaAranha.h"
 #include "Inimigo.h"
 #include "Chefao.h"
 #include "InimigoPequeno.h"
 #include "InimigoAlto.h"
-
 #include "MenuPause.h"
+
 namespace Fases {
 
     class Fase : public Ente {

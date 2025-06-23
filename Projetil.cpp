@@ -9,9 +9,9 @@ using namespace Listas;
 using namespace Entidades::Personagens;
 namespace Entidades {
 
-    Projetil::Projetil(Vector2f pos, bool dir, float raio, Listas::ListaEntidades* lp,
+    Projetil::Projetil(Vector2f pos, bool dir, float raio, 
         Entidades::Personagens::Jogador* pdono, short int f) :
-        Entidade(pos), ativo(true), lista(lp), duracao(TEMPO_PROJETIL), pDono(pdono)
+        Entidade(pos), ativo(true), duracao(TEMPO_PROJETIL), pDono(pdono)
     {
         try {
             carregarTextura("projetil.png");
@@ -43,7 +43,7 @@ namespace Entidades {
     }
 
     Projetil::Projetil(Vector2f pos, Vector2f v, Entidades::Personagens::Jogador* pdono):
-		Entidade(pos), pDono(pdono), ativo(true), lista(nullptr), duracao(TEMPO_PROJETIL)
+		Entidade(pos), pDono(pdono), ativo(true), duracao(TEMPO_PROJETIL)
     {
         try {
             carregarTextura("projetil.png");

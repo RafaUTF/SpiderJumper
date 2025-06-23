@@ -95,7 +95,7 @@ namespace Entidades {
         {
             if (recarga >= TEMPO_RECARGA) {
                 cout << "CHEFAO ATIROU" << endl;
-                tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x, tiros, nullptr, forca));
+                tiros->incluir(new Projetil(getcm(), olhandoDir, getRaio().x,  nullptr, forca));
                 recarga = 0;
             }
             else

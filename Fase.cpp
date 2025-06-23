@@ -1,8 +1,5 @@
 ﻿#include "Fase.h"
-#include "json.hpp"
-#include <fstream>
 
-using json = nlohmann::json;
 using namespace Listas;
 using namespace Entidades;
 using namespace Gerenciadores;
