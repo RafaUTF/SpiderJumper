@@ -13,7 +13,8 @@ float modulo(float x) {
 
 namespace Gerenciadores {
 
-
+	//C++ nao apaga objetos estaticos criados localmente
+	//Singletron baseado no livro: Effective C++: 55 Specific Ways to Improve Your Programs and Designs
 	Gerenciador_Colisoes* Gerenciador_Colisoes::getInstancia()
 	{
 		static Gerenciador_Colisoes instancia;
@@ -360,17 +361,17 @@ namespace Gerenciadores {
 			}
 		}
 
-		// Tenta remover de obst·culos
+		// Tenta remover de obst√°culos
 		if (auto* po = dynamic_cast<Obstaculos::Obstaculo*>(pE)) {
 			auto it = std::find(LOs.begin(), LOs.end(), po);
 			if (it != LOs.end()) {
 				LOs.erase(it);
-				std::cout << "Obst·culo removido do Gerenciador_Colisoes." << std::endl;
+				std::cout << "Obst√°culo removido do Gerenciador_Colisoes." << std::endl;
 				return;
 			}
 		}
 
-		std::cout << "Entidade n„o removida: tipo desconhecido." << std::endl;
+		std::cout << "Entidade n√£o removida: tipo desconhecido." << std::endl;
 	}
 
 	set<Projetil*>& Gerenciador_Colisoes::getProjeteis()
