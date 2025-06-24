@@ -103,12 +103,13 @@ namespace Gerenciadores {
 		camera.setCenter(Vector2f(centroX, ALTURA_TELA / 2.f));
 		janela->setView(camera);
 		if(t)
-			t->setPosition(camera.getCenter()-Vector2f(LARGURA_TELA/2 - 20.f,ALTURA_TELA/2 - 10.f)); // Move o texto para acompanhar a c‚mera	
+			t->setPosition(camera.getCenter()-Vector2f(LARGURA_TELA/2 - 20.f,ALTURA_TELA/2 - 10.f)); // Move o texto para acompanhar a c√¢mera	
 	}
 
 	
 
-
+	//C++ nao apaga objetos estaticos criados localmente
+	//Singletron baseado no livro: Effective C++: 55 Specific Ways to Improve Your Programs and Designs
 	Gerenciador_Grafico* Gerenciador_Grafico::getInstancia() {
 		static Gerenciador_Grafico instancia;
 		return &instancia;
