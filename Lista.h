@@ -75,7 +75,8 @@ namespace Listas {
 			}
 			return false;
 		}
-
+		//iterator inspirado em iteradores de conteineres da STL
+		//referencia: "The C++ Programming Language" - Bjarne Stroustrup
 		class iterator {
 		private:
 			Elemento<TL>* pex;
