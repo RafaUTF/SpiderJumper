@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+// o seguinte vídeo foi utilizado para ajudar no processo de construção do menu: https://www.youtube.com/watch?v=h8-Q4eu3Qt4
+
 class MenuBase {
 protected:
     sf::Font fonte;
